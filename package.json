@@ -6,7 +6,8 @@
   "scripts": {
     "clean": "rm -rf dist/",
     "build": "npm run clean && mkdir dist &&  babel src -s -d dist",
-    "production": "npm run build && node dist/index.js"
+    "production": "npm run build && node dist/index.js",
+    "start": "npm run production"
   },
   "keywords": [],
   "author": "",
