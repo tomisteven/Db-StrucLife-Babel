@@ -1,7 +1,8 @@
 import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+dotenv.config();
 
-
-mongoose.connect('mongodb+srv://admin:admin123@structlife-cluster.jh1ls.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
+mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
 }).then(() => {
     console.log('Connected to MongoDB');
