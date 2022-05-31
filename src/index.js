@@ -22,8 +22,8 @@ app.use("/api/studies", StudyRoutes);
 //base de datos
 import './database.js'
 
-app.listen(process.env.port || 8080, () => {
-    console.log('Server started on port', process.env.port || 8080);
+app.listen(process.env.PORT || 8080, () => {
+    console.log('Server started on port', process.env.PORT || 8080);
 })
 
 
