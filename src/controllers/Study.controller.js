@@ -18,9 +18,6 @@ try {
     console.log(error);
 }
 
-
-
-
 }
 const deleteStudy = async (req, res) => {
     const _id = req.params.id;

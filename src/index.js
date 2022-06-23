@@ -2,6 +2,7 @@ import express from 'express';
 import TaskRoutes from './routes/Task.routes.js';
 import TurnRoutes from './routes/Turns.routes';
 import StudyRoutes from './routes/Study.routes';
+import IdeaRoutes from './routes/Idea.routes';
 import cors from 'cors';
 import morgan from 'morgan';
 import dotenv from 'dotenv';
@@ -19,6 +20,7 @@ app.use(morgan('dev'));
 app.use("/api/tasks", TaskRoutes);
 app.use("/api/turns", TurnRoutes);
 app.use("/api/studies", StudyRoutes);
+app.use("/api/ideas", IdeaRoutes);
 //base de datos
 import './database.js'
 
