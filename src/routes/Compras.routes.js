@@ -20,7 +20,6 @@ router.put('/completecompra/:id', compraComplete)
 
 router.get('/test/:id_compra/compra/:id_product', (req, res) => {
     const {id_product, id_compra} = req.params;
-    
     const compra = {
         id_compra,
         id_product,

@@ -6,7 +6,7 @@ const Study = new Schema({
         required: true
     },
     tiempoEstimado: {
-        type: Number,
+        type: String,
         required: true
     },
     porcentajeAvance: {
