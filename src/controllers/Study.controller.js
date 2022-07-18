@@ -12,7 +12,7 @@ const createStudy = async (req, res) => {
 const getStudyes = async (req, res) => {
 try {
     const Studyy = await Study.find();
-    res.json({ message: 'studies found', studies: Studyy });
+    res.json(Studyy);
     
 } catch (error) {
     console.log(error);
