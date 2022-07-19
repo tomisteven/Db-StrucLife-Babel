@@ -12,7 +12,7 @@ const CompraSchema = new Schema({
             type: String
         }, 
         cantidad: {
-            type: Number
+            type: String
         }
     }],
     completed: {
